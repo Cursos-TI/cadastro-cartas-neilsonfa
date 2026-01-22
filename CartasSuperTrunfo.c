@@ -8,7 +8,7 @@ int main(){
 
 	// Recebendo os dados do usuario da primeira carta.
 	printf("Digite uma letra de A a H para representar o estado:\n");
-	scanf("%c", &estado_1);
+	scanf(" %c", &estado_1);
 	printf("\n");
 
 	printf("Digite o codigo da carta:\n");
@@ -37,7 +37,7 @@ int main(){
 
 	// Recebendo os dados do usuario da segunda carta.
 	printf("Digite uma letra de A a H para representar o estado:\n");
-	scanf("%c", &estado_2);
+	scanf(" %c", &estado_2);
 	printf("\n");
 
 	printf("Digite o codigo da carta:\n");

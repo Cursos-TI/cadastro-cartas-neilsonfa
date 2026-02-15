@@ -2,7 +2,7 @@
 
 int main(){
 	// Declaração de variaveis.
-	char estado_1, cod_carta_1[3], nome_cidade_1[20], estado_2, cod_carta_2[3], nome_cidade_2[20];
+	char estado_1, cod_carta_1[3], nome_cidade_1[30], estado_2, cod_carta_2[3], nome_cidade_2[30];
 	int populacao_1, num_pontos_turisticos_1, populacao_2, num_pontos_turisticos_2;
 	float area_1, pib_1, area_2, pib_2;
 
@@ -12,28 +12,25 @@ int main(){
 	printf("\n");
 
 	printf("Digite o codigo da carta:\n");
-	scanf("%s", &cod_carta_1);
+	scanf(" %s", &cod_carta_1);
 	printf("\n");
 
 	printf("Digite o nome da cidade:\n");
-	scanf("%s", &nome_cidade_1);
+	getchar();	// Limpa o Enter do buffet digitado na entrada da variável anterior.
+	fgets(nome_cidade_1, 30, stdin);
 	printf("\n");
 
 	printf("Digite a populacao da cidade:\n");
 	scanf("%d", &populacao_1);
-	printf("\n");
 
 	printf("Digite a area da cidade (km):\n");
 	scanf("%f", &num_pontos_turisticos_1);
-	printf("\n");
 
 	printf("Digite o PIB da cidade:\n");
 	scanf("%f", &area_1);
-	printf("\n");
 
 	printf("Digite a quantidade de pontos turisticos:\n");
 	scanf("%d", &pib_1);
-	printf("\n");
 
 	// Recebendo os dados do usuario da segunda carta.
 	printf("Digite uma letra de A a H para representar o estado:\n");
@@ -41,11 +38,12 @@ int main(){
 	printf("\n");
 
 	printf("Digite o codigo da carta:\n");
-	scanf("%s", &cod_carta_2);
+	scanf(" %s", &cod_carta_2);
 	printf("\n");
 
 	printf("Digite o nome da cidade:\n");
-	scanf("%s", &nome_cidade_2);
+	getchar();	// Limpa o Enter do buffet digitado na entrada da variável anterior.
+	fgets(nome_cidade_1, 30, stdin);
 	printf("\n");
 
 	printf("Digite a populacao da cidade:\n");
